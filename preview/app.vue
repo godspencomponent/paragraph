@@ -101,12 +101,13 @@ export default {
   data () {
     return {
       componentProps: {
-        type: 3,
+        type: 4,
         info: {
-          title: '高扩展的在线网页制作平台',
+          title: '标题',
           img: 'https://gw.alipayobjects.com/zos/rmsportal/XKBFuFdRUegzStHGTVdj.png',
-          titleFont: 22,
+          titleFont: 20,
           titleColor: '',
+          iconColor: '#6260e1',
           content: '1.高扩展的在线网页制作平台。<br/> 2.营销团队可以使用码良创建配置非常灵活的页面，配合获取到的访问等数据，可以直观的看到营销效果。',
           tag: [
               {

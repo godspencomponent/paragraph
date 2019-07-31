@@ -1,9 +1,11 @@
 <template>
   <div class="component">
     <section class="comp_detail_1">
-      <h1 class='titlePage' :style="{fontSize: info.titleFont + 'px', color: info.titleColor}">
-        <span class='icon' v-if='type == 3'></span>
-        <span>{{info.title}}</span>
+      <h1 :class='{titlePage: type == 4}' :style="{fontSize: info.titleFont + 'px', color: info.titleColor}">
+        <span class='icon' v-if='type == 3' :style="{backgroundColor: info.iconColor}"></span>
+        <span class="iconCenter" v-if='type == 4' :style="{backgroundColor: info.iconColor}"></span>
+        <span class='content'>{{info.title}}</span>
+        <span class="iconCenter" v-if='type == 4' :style="{backgroundColor: info.iconColor}"></span>
       </h1>
       <div class="comp_detail" v-if='[1, 2].includes(type)'>
         <img :src="info.img" alt="" v-if="type == 1">
@@ -73,7 +75,14 @@
         font-size 22px
         display flex
         align-items center
+        -webkit-box-align: center;
         margin 0
+        .content {
+          margin 0 8px
+        }
+        span {
+          display inline-block
+        }
         .icon {
           width: 4px;
           height: 18px;
@@ -81,6 +90,14 @@
           background-color: rgb(98, 96, 225);
           margin-right 6px
         }
+        .iconCenter {
+          width 12px
+          height 3px
+          background-color #ffa020
+        }
+      }
+      .titlePage {
+        justify-content: center;
       }
       .comp_text {
         padding: 8px 0
@@ -91,6 +108,7 @@
         display: flex;
         align-items: center;
         margin-top: 12px;
+        padding 0 8px
         img{
           display: block;
           height: 24px;
