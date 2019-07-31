@@ -12,6 +12,10 @@
     "start": "npm run dev",
     "dist": "npm run build"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/godspencomponent/paragraph"
+  },
   "style": {
     "width": "100%",
     "height": "auto"
