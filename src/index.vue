@@ -45,8 +45,21 @@
           return {
             title: '高扩展的在线网页制作平台',
             img: 'https://gw.alipayobjects.com/zos/rmsportal/XKBFuFdRUegzStHGTVdj.png',
-            tag: []
-          }
+            titleFont: 20,
+            titleColor: '',
+            iconColor: '#6260e1',
+            content: '1.高扩展的在线网页制作平台。<br/> 2.营销团队可以使用码良创建配置非常灵活的页面，配合获取到的访问等数据，可以直观的看到营销效果。',
+            tag: [
+                {
+                  label: '阿拉雷',
+                  color: '#000'
+                },
+                {
+                  label: '码良',
+                  color: ''
+                }
+              ]
+            }
         },
         editor: {
           ignore: true

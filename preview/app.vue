@@ -101,7 +101,7 @@ export default {
   data () {
     return {
       componentProps: {
-        type: 4,
+        type: 1,
         info: {
           title: '标题',
           img: 'https://gw.alipayobjects.com/zos/rmsportal/XKBFuFdRUegzStHGTVdj.png',
