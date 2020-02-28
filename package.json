@@ -1,7 +1,6 @@
 {
   "name": "paragraph",
-  "namespace": "Luffy",
-  "label": "",
+  "label": "段落",
   "version": "1.0.2",
   "description": "段落",
   "private": true,
